@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CV Using HTML & CSS</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-size: 14px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-size: 18px;
+        }
+        p, td {
+            font-size: 16px;
+        }
+        #work img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+        #work td {
+            vertical-align: top;
+        }
+        #work .work-1 {
+            padding-bottom: 20px;
+        }
+        #header {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: auto;
+            background-color: #ffffff;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 10px;
+        }
+        .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .menu li {
+            margin-right: 10px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 14px;
+            border: 1px solid transparent;
+        }
+        .menu a:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+   
+<div id="header">
+    <nav class="menu">
+        <ul>
+            <li><a href="#objective">Mục tiêu nghề nghiệp</a></li>
+            <li><a href="#education">Học vấn</a></li>
+            <li><a href="#work">Kinh nghiệm</a></li>
+            <li><a href="#bio-data">Sơ yếu lý lịch</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div id="page">
+    <div class="photo-and-name">
+        <img src="profile.jpg" class="photo" alt="Profile Picture">
+        <div class="contact-info-box">
+            <h1 class="name">Võ Chiêu Quân</h1>
+            <br>
+            <h3 class="job-title">Software Engineer</h3>
+            <p class="contact-details">Phone: 09755555xx &nbsp; - &nbsp; Email: vochieuquan@gmail.com</p>
+        </div>
+    </div>
+    <div id="objective">
+        <h3>Mục tiêu nghề nghiệp</h3>
+        <p>
+            Là một sinh viên đầy nhiệt huyết, hứa hẹn sẽ trở thành một phần có ích để đóng góp cho công ty. Tôi mong muốn được làm việc ở vị trí Fresher =]] để có thể trau dồi và học hỏi thêm nhiều kiến thức, cũng như hoàn thành các công việc được giao để đóng góp cho công ty ngày càng phát triển. 
+        </p>
+    </div>
+    <div id="education">
+        <h3>Học vấn</h3>
+        <table>
+            <tr class="school-1">
+                <td rowspan="2">2020 - 2024</td>
+                <td><b>Trung Học Phổ Thông</b>: Trường Trung Học Phổ Thông Võ Nguyên Giáp </td>
+            </tr>
+            <tr class="school-2">
+                <td><b>Đại Học</b>: FPTU</td>
+            </tr>
+            
+            <tr class="school-1">
+                <td rowspan="2">2024-2027</td>
+                <td><b>Bằng</b>: Sinh viên xuất sắc chuyên KTPM</td>
+            </tr>
+            <tr class="school-2">
+                <td><b>Thế mạnh</b>: Web Designing (HTML, CSS, JS, Bootstrap)</td>
+            </tr>
+            
+            <tr>
+                <td style="width: 120px; color: gray;">2027 - 2030</td>
+                <td><b>Bằng</b>: Giáo sư developer, bậc thầy viết code, ông trùm backend, thợ code fullstack, kẻ hủy diệt fresher</td>
+            </tr>
+        </table>
+    </div>
+    <div id="work">
+        <h3>Kinh nghiệm</h3>
+        <table>
+            <tr class="work-1">
+                <td>2030 - 2032</td>
+                <td><b>Fsoft</b>: Trùm phòng IT</td>
+            </tr>
+            <tr class="work-2">
+                <td>2032 - Tương lai</td>
+                <td><b>Google</b>: Giám đốc</td>
+                <td><img src="C:\Users\ADMIN\OneDrive\Hình ảnh\cc\anh.jpeg" alt="Work Experience Image" width="300" height="200"></td>
+            </tr>
+ 
+        </table>
+    </div>
+    <div id="bio-data">
+        <h3>Sơ yếu lý lịch</h3>
+        <table>
+            <tr>
+                <td>Tên:</td>
+                <td><b>Võ Chiêu Quân</b></td>
+            </tr>
+            <tr>
+                <td>Date of Birth:</td>
+                <td><b>Ngày 26 tháng 10 2004</b></td>
+            </tr>
+            <tr>
+                <td>CCCD:</td>
+                <td><b>123456789</b></td>
+            </tr>
+            <tr>
+                <td>Dân tộc:</td>
+                <td><b>Kinh</b></td>
+            </tr>
+            <tr>
+                <td>Quốc tịch:</td>
+                <td><b>Việt Nam</b></td>
+            </tr>
+            <tr>
+                <td>Hôn nhân:</td>
+                <td><b>Chưa có</b></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div id="centered-content">
+    <a href="https://www.facebook.com/chieuquan2610" target="_blank">
+        <img src="facebook.png" alt="Facebook">
+    </a>
+    <a href="mailto:vochieuquan@gmail.com" target="_blank">
+        <img src="gmail.png" alt="Gmail">
+    </a>
+</div>
+
+<div id="scroll-to-top">
+    <a href="#" id="back-to-top">&#9650;</a>
+</div>
+
+</body>
+</html>
